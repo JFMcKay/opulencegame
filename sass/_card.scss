@@ -1,0 +1,26 @@
+.card {
+    position: relative;
+    width: 50%;
+    height: 50%;
+  }
+  .card .front,
+  .card .back {
+    margin: auto 0;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+    backface-visibility: hidden;
+  }
+  .card .back {
+    transform: rotateY(180deg);
+    //background-image: url("../images/OpulenceGameLogoBW.png");
+  }
+  .card.flipped .front {
+    transform: rotateY(180deg);
+    // background-image: url("../images/OpulenceGameLogo.png");
+  }
+  .card.flipped .back {
+    transform: rotateY(0deg);
+  }
