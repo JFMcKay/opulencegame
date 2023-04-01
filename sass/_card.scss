@@ -1,26 +1,56 @@
 .card {
     position: relative;
-    width: 50%;
-    height: 50%;
+    width: 90%;
+    
   }
   .card .front,
   .card .back {
-    margin: auto 0;
     position: absolute;
-
     top: 0;
     left: 0;
     transition: transform 0.5s ease-in-out;
     backface-visibility: hidden;
   }
+  .front {
+    h1 {
+      text-align: center;
+      font-size: 1rem;
+      margin: 3rem 0;
+    }
+    background: url('../images/OpulenceGameLogoRS.png') no-repeat center center;
+    background-size: contain;
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .back {
+
+    font-size: 1.2rem;
+    background: url('../images/OpulenceGameLogoBWRS.png') no-repeat center center;
+    background-size: contain;
+    width: 90%;
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div {
+      min-width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
   .card .back {
     transform: rotateY(180deg);
-    //background-image: url("../images/OpulenceGameLogoBW.png");
   }
   .card.flipped .front {
     transform: rotateY(180deg);
-    // background-image: url("../images/OpulenceGameLogo.png");
   }
   .card.flipped .back {
     transform: rotateY(0deg);
   }
+
