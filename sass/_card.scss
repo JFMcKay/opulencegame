@@ -38,7 +38,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    div {
+    > div {
       min-width: 50%;
       display: flex;
       flex-direction: column;
